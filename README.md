@@ -18,6 +18,10 @@ This tool is particularly useful for:
 
 By highlighting frequently used words and phrases, this app helps users refine their writing style, avoid unintended repetition, and create more engaging content. Whether you're crafting an article, blog post, academic paper, or any other form of written content, this Word Counter App can be an invaluable asset in your writing toolkit.
 
+## Demo
+
+Try out the Word Counter live: [Word Counter Demo](https://word-counter-demo-app.vercel.app/)
+
 ## Features
 
 - Intuitive user interface with a text area for input

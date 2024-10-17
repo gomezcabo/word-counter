@@ -36,20 +36,20 @@ function App() {
   const totalCount = getTotalCounts(text);
 
   return (
-    <div className="w-full py-6 px-10 flex flex-col gap-2">
+    <div className="bg-gray-50 w-full py-6 px-10 flex flex-col gap-2">
       <h1 className="text-2xl font-bold">Word Counter</h1>
       <div className="w-full flex gap-2">
         <div className="w-2/3 ">
           <textarea
             placeholder="Paste your text here..."
-            className="h-[calc(100vh-100px)] mt-2 text-sm block w-full rounded border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2"
+            className="h-[calc(100vh-100px)] mt-2 text-sm block w-full rounded-lg border-0 py-4 px-5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-gray-300 focus:ring-inset"
             value={text}
             onChange={(e) => setText(e.target.value)}
           ></textarea>
         </div>
         <div className="flex-1 flex flex-col gap-2 pl-2">
           <select
-            className="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2"
+            className="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-gray-500 focus:ring-inset"
             value={wordCount}
             onChange={(e) => setWordCount(+e.target.value)}
           >
@@ -66,7 +66,7 @@ function App() {
           </select>
           <h2 className="text-md font-medium mt-2">Total Count: {totalCount}</h2>
 
-          <div className="h-[calc(100vh-185px)] overflow-y-auto border rounded p-3">
+          <div className="h-[calc(100vh-185px)] overflow-y-auto border rounded p-3 bg-white">
             <table>
               {wordCounts.map(([word, count], index) => (
                 <tr key={index} className="text-xs">
